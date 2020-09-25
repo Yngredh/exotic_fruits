@@ -1,0 +1,44 @@
+body{
+    margin: auto auto;
+}
+.top-menu-bar{
+    width: 99vw;
+    height: 45%;
+    background-color:rgba(33, 0, 103, 1);
+    display: flex;
+}
+.top-menu-bar ul {
+	padding: 0;
+    margin: 0;
+	list-style: none;
+	position: relative;
+}
+	
+.top-menu-bar ul li {
+	display:inline-block;
+}
+
+.top-menu-bar a {
+	display:block;
+	padding:0 10px;	
+	color:#FFF;
+	font-size:20px;
+	line-height: 60px;
+	text-decoration:none;
+}
+
+.top-menu-bar ul.children {
+    display: none;
+    position: absolute;
+}
+#mother:hover .children{
+    display: inherit;
+
+}
+.top-menu-bar li#mother li#retract-menu-item {
+    background-color: black;
+	width:170px;
+	float:none;
+	display:list-item;
+	position: relative;
+}
