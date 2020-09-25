@@ -14,8 +14,13 @@ body{
 	position: relative;
 }
 	
-.top-menu-bar ul li {
-	display:inline-block;
+.top-menu-bar ul{
+	display: flex;
+}
+
+#mother,
+#retract-menu-item{
+    display:inline-block;
 }
 
 .top-menu-bar a {
@@ -41,4 +46,11 @@ body{
 	float:none;
 	display:list-item;
 	position: relative;
+}
+
+#buttons{
+    width: 95vw;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
 }
