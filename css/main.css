@@ -60,11 +60,6 @@ body div.main-slide-button{
     justify-content: space-between;
 }
 
-.banner-box {
-    width: 4500px;
-    -webkit-animation: slide 18s ease infinite;
-}
-
 .banner{
     float: left;
     height: 600px;
@@ -72,16 +67,83 @@ body div.main-slide-button{
 }
   
 #slide-show{
+    position: relative;
     overflow: hidden;
     width: 1500px;
     height: 600px;
     margin: 0 auto;
 }
 
+
+body #main-slide-button{
+    position: relative;
+    display: flex;
+}
+
+/* Animações do slides automatica configuradas, não pode coexistir com os botões */
+.banner-box {
+    position: relative;
+    z-index: -1;
+    width: 4500px;
+    -webkit-animation: slide 18s ease infinite;
+}
+
 @-webkit-keyframes slide {
+    10% {margin-left: 0px;}
     20% {margin-left: 0px;}
     30% {margin-left: -1500px;}
     50% {margin-left: -1500px;}
     60% {margin-left: -3000px;}
     70% {margin-left: -3000px;}
+    80% {margin-left: -0px;}
+    90% {margin-left: -0px;}
+    100% {margin-left: -0px;}
 }
+/* Fim da configuração de automação dos slides */
+
+#slide-1,
+#slide-2,
+#slide-3{
+    z-index: -1
+}
+
+#nav{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    bottom: 12%;
+    height: 11px;
+    position: absolute;
+    text-align: center;
+    z-index: 99;
+    cursor: default;
+}
+#nav #buttons{
+    width: 15%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#nav .dots{
+    top: -15%;
+	width: 18px;
+	height: 18px;
+	position: relative;
+	border-radius: 100%;
+	display: inline-block;
+	background-color: rgba(0, 0, 0, 0.6);
+	cursor: pointer;
+}
+
+/* Configuração de movimentação dos botões de navegação, não pode coexistir com a animação, sorry */
+#i1:checked ~ .banner-box{
+    
+    margin-left: 0%;
+}
+#i2:checked ~ .banner-box{
+    margin-left: -1500px;
+}
+#i3:checked ~ .banner-box{
+    margin-left: -3000px;
+}
+/* Fim da configuração de movimentação dos dos botões de navegação */
