@@ -28,8 +28,21 @@ body{
     display:inline-block;
 }
 #dropdown #mother .loja{
+    width: 80px;
+    justify-content: center;
+    align-items: center;
     margin-right: 10px;
 }
+
+#dropdown #mother #container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+
 body div.main-slide-button{
     width: 99vw;
     display: inline-flex;
@@ -37,12 +50,15 @@ body div.main-slide-button{
     justify-content: center;
 }
 .top-menu-bar a {
-	display:block;
+	display: flex;
 	padding:0 10px;	
 	color:#FFF;
 	font-size:20px;
 	line-height: 60px;
 	text-decoration:none;
+}
+.top-menu-bar a:hover{
+    background-color:var(--verde);
 }
 
 .top-menu-bar ul.children {
@@ -59,7 +75,7 @@ body div.main-slide-button{
 	float:none;
 	display:list-item;
     position: relative;
-    margin-left: -110px;
+    margin-left: -60px;
 }
 
 .top-menu-bar li#mother li#retract-menu-item:hover {
@@ -84,7 +100,7 @@ body div.main-slide-button{
     overflow: hidden;
     width: 1500px;
     height: 600px;
-    margin: 0 auto;
+    margin: 0 0;
 }
 
 
