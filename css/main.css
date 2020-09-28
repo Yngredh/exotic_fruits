@@ -110,12 +110,6 @@ body #main-slide-button{
     100% {margin-left: -0px;}
 }
 
-#slide-1,
-#slide-2,
-#slide-3{
-    z-index: -1
-}
-
 #nav{
     display: flex;
     justify-content: center;
