@@ -52,11 +52,16 @@ body{
     margin-right: 10px;
 }
 
+.top-menu-bar #container{
+    display: flex;
+    align-items: center;
+}
+
 #dropdown #historia .saiba-menos{
     margin-right: 15px;
 }
 
-body div.main-slide-button{
+body section.main-slide-button{
     width: 99vw;
     display: inline-flex;
     align-items: center;
@@ -70,6 +75,10 @@ body div.main-slide-button{
 	line-height: 60px;
 	text-decoration:none;
 }
+.top-menu-bar a.loja {
+	padding: 0;
+}
+.top-menu-bar #container:hover,
 .top-menu-bar a:hover{
     background-color:var(--verde);
 }
@@ -117,11 +126,7 @@ body div.main-slide-button{
     margin: 0 auto;
 }
 
-    
-body #main-slide-button{
-    position: relative;
-    display: flex;
-}
+
 
 .banner-box {
     position: relative;
@@ -217,4 +222,45 @@ body .content{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.manchetes .manchete-1{
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 12%;
+    margin-bottom: 20px;
+
+}
+.manchete-1 #texto-manchete1,
+.manchete-1 #link-manchete1{
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+    width: 70%;
+    font-size: 45px;
+    text-align: center;
+}
+.manchete-1 #link-manchete1 a{
+    text-decoration: none;
+    background-color: var(--rosa);
+    color: white;
+    font-size: 20px;
+}
+.manchete-1 #texto-manchete1 #destaque{
+    color: var(--rosa);
+}
+
+.manchete-1 #div-manchete-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.manchete-1 #imagem-manchete-1{
+    width: 100%;
+    height: 100%;
+    margin-left: -240px;
 }
