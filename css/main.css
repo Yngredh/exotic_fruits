@@ -16,7 +16,7 @@ body{
     align-items: center;
 }
 .top-menu-bar ul li#logo-container{
-    width: 16%;
+    width: 20%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -34,7 +34,7 @@ body{
     margin: 0;
 	list-style: none;
     position: relative;
-    height: 20vh;
+    height: 21vh;
 }
 	
 .top-menu-bar ul{
