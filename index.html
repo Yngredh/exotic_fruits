@@ -12,14 +12,14 @@
 </head>
 
 <body>
+    <!-- >>> MENU <<< -->
+    
     <header class="top-menu-bar">
         
         <UL>
             <LI><img src="" alt="Logo da Empresa"></LI>
             <div id="dropdown">
-                <li>
-                    <a href="">saiba menos</a>
-                </li>
+                
                 <LI id="mother">
                     <div id="container">
                         <a class="loja" href="">Loja</a>
@@ -29,37 +29,54 @@
                             <a id="link" href="">Exoticas</a>
                         </li>
                         <li id="retract-menu-item">
-                            <a id="link" href="">Não exoticas</a>
+                            <a id="link" href="">Comuns</a>
                         </li>
                     </ul>
                 </LI>
+                <li>
+                    <a href="">Conheça-nos</a>
+                </li>
                 
             </div>
         </UL>
     </header>
     
-    
+    <!-- >>> HEADER <<< -->
 	
     <div class="main-slide-button">
-        <div id="slide-show">
 
+        
+
+        <div id="slide-show">
+            <input type="radio" name="imagem" id="i1" checked>
+            <input type="radio" name="imagem" id="i2">
+            <input type="radio" name="imagem" id="i3">
             <div class="banner-box">
                 
                 <div class="banner"id="slide-1">
-                    <img src="imagens/pitayaslide.png" alt="">
+                    <img src="imagens/frutasvermelhas.png" alt="">
                 </div>
                 <div class="banner"id="slide-2">
-                     2
+                     <img src="imagens/morangomirtilo.png" alt="">
                 </div>
                 <div class="banner"id="slide-3">
-                    3
+                    <img src="imagens/sorvetedefrutas.png" alt="">
                 </div>
 
+            </div>
+
+            <div id="nav">
+                <div id="buttons">
+                    <label for="i1" class="dots" id="button1"></label>
+                    <label for="i2" class="dots" id="button2"></label>
+                    <label for="i3" class="dots" id="button3"></label>
+                </div>
             </div>
         </div>
         
         
+        
     </div>
-
+    
 </body>
 </html>

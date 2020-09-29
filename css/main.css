@@ -113,17 +113,6 @@ body #main-slide-button{
     position: relative;
     z-index: -1;
     width: 4500px;
-    -webkit-animation: slide 18s ease infinite;
-}
-
-@-webkit-keyframes slide {
-    10% {margin-left: 0px;}
-    20% {margin-left: 0px;}
-    30% {margin-left: -1500px;}
-    50% {margin-left: -1500px;}
-    60% {margin-left: -3000px;}
-    70% {margin-left: -3000px;}
-    100% {margin-left: -0px;}
 }
 
 #nav{
@@ -154,3 +143,20 @@ body #main-slide-button{
 	cursor: pointer;
 }
 
+#i1,
+#i2,
+#i3{display: none;}
+
+#nav #button1:hover,
+#nav #button2:hover,
+#nav #button3:hover{
+    background-color:white
+}
+
+#i1:checked ~ #nav #buttons #button1{ background-color: white}
+#i2:checked ~ #nav #buttons #button2{ background-color: white}
+#i3:checked ~ #nav #buttons #button3{background-color: white}
+
+#i1:checked ~ .banner-box{margin-left: -0px;}
+#i2:checked ~ .banner-box{margin-left: -1500px;}
+#i3:checked ~ .banner-box{margin-left: -3000px;}
