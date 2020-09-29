@@ -7,7 +7,7 @@ body{
     margin: auto auto;
 }
 .top-menu-bar{
-    width: 100vw;
+    width: 98.5vw;
     height: 45%;
     background-color:var(--roxo);
     display: flex;
@@ -76,7 +76,6 @@ body div.main-slide-button{
 	float:none;
 	display:list-item;
     position: relative;
-    margin-left: -60px;
 }
 
 .top-menu-bar li#mother li#retract-menu-item:hover {
@@ -101,7 +100,6 @@ body div.main-slide-button{
     overflow: hidden;
     width: 1500px;
     height: 600px;
-    margin: 0 0;
 }
 
     
