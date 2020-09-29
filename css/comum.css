@@ -1,0 +1,103 @@
+:root{
+    --rosa: #E04060;
+    --verde: #c0c060;
+    --roxo: #202040 
+}
+body{
+    margin: auto auto;
+}
+.top-menu-bar{
+    width: 99vw;
+    height: 45%;
+    background-color:var(--roxo);
+    display: flex;
+}
+.top-menu-bar ul {
+	padding: 0;
+    margin: 0;
+	list-style: none;
+	position: relative;
+}
+	
+.top-menu-bar ul{
+	display: flex;
+}
+
+#mother,
+#retract-menu-item{
+    display:inline-block;
+}
+#dropdown #mother .loja{
+    width: 80px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+#dropdown #historia .saiba-menos{
+    margin-right: 15px;
+}
+
+body div.main-slide-button{
+    width: 99vw;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.top-menu-bar a {
+	display: flex;
+	padding:0 10px;	
+	color:#FFF;
+	font-size:20px;
+	line-height: 60px;
+	text-decoration:none;
+}
+.top-menu-bar a:hover{
+    background-color:var(--verde);
+}
+
+.top-menu-bar ul.children {
+    display: none;
+    position: absolute;
+}
+#mother:hover .children{
+    display: inherit;
+    z-index: 99;
+
+}
+.top-menu-bar li#mother li#retract-menu-item {
+    background-color: var(--roxo);
+	width:170px;
+	float:none;
+	display:list-item;
+    position: relative;
+}
+
+.top-menu-bar li#mother li#retract-menu-item:hover {
+    background-color:var(--verde);
+}
+
+#dropdown{
+    width: 95vw;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.grid_geral {
+    display: grid;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
+}
+
+.fruta {
+    display: flex;
+    background: tomato;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+	font-size: 1.5em;
+}
