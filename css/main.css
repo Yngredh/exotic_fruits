@@ -67,6 +67,7 @@ body div.main-slide-button{
 }
 #mother:hover .children{
     display: inherit;
+    z-index: 99;
 
 }
 .top-menu-bar li#mother li#retract-menu-item {
@@ -103,7 +104,7 @@ body div.main-slide-button{
     margin: 0 0;
 }
 
-
+    
 body #main-slide-button{
     position: relative;
     display: flex;
