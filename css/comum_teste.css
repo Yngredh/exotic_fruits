@@ -1,4 +1,4 @@
-:root{
+/* :root{
     --rosa: #E04060;
     --verde: #c0c060;
     --roxo: #202040 
@@ -82,40 +82,80 @@ body div.main-slide-button{
     height: 100%;
     display: flex;
     justify-content: space-between;
-}
+} */
 
-.grid_geral {
-    display: grid;
-    width: 90%;
-    margin: 0 auto;
-    padding: 30px;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 50px;
-}
-
-.frutas {
-    display: block;
-    width: 18.5vw;
-    height: 43vh;
-    background: tomato;
-}
-
-.img {
+body {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    margin: 20px;
+    align-items: center;
+    background-color: #E04060;
 }
 
-.nome {
+section {
+    position: relative;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+section .fruta {
+    position: relative;
+    max-width: 300px;
+    height: 320px;
+    background: #FFF;
+    margin: 30px 10px;
+    border-radius: 5px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s ease-in-out;
+}
+
+section .fruta:hover {
+    height: 500px;
+}
+
+section .fruta .img {
+    position: relative;
+    width: 260px;
+    top: -60px;
+    left: 20px;
+    z-index: 1;
+}
+
+section .fruta .img img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+section .fruta .content {
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+section .fruta:hover .content {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
+
+.esquerda {
     margin-left: 30px;
     font-size: 20px;
-    color: aqua;
 }
 
 .preco {
     display: flex;
-    color: aqua;
     margin-right: 30px;
     margin-top: 10px;
     justify-content: flex-end;
