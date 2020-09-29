@@ -7,7 +7,7 @@ body{
     margin: auto auto;
 }
 .top-menu-bar{
-    width: 98.5vw;
+    width: 99vw;
     height: 45%;
     background-color:var(--roxo);
     display: flex;
@@ -33,14 +33,15 @@ body{
     align-items: center;
     margin-right: 10px;
 }
-
-#dropdown #mother #container{
-    width: 100%;
-    display: flex;
+#dropdown #mother .loja{
+    width: 80px;
     justify-content: center;
-    justify-items: center;
     align-items: center;
-    align-content: center;
+    margin-right: 10px;
+}
+
+#dropdown #historia .saiba-menos{
+    margin-right: 15px;
 }
 
 body div.main-slide-button{
