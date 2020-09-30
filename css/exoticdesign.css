@@ -14,7 +14,7 @@ body{
 /* >>> MENU <<< */
 nav.menu{
     width: 99vw;
-    height: 12vh;
+    height: 11vh;
     background-color:var(--roxo);
     display: flex;
 }
@@ -23,8 +23,11 @@ nav.menu ul{
     width: 99vw;
     height: 11vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 li#logo-box{
+    margin-top: 5px;
     width: 50%;
     height: 100%;
 }
@@ -73,7 +76,7 @@ div#botoes-menu li{
 }
 #link-menu-logo{
     display: flex;
-    width: 9.5%;
+    width: 10%;
     height: 90%;
     padding-left: 18px;
     text-decoration: none;
