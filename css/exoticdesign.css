@@ -21,7 +21,7 @@ nav.menu{
 nav.menu ul{
     list-style: none;
     width: 99vw;
-    height: 12vh;
+    height: 11vh;
     display: flex;
 }
 li#logo-box{
@@ -67,14 +67,14 @@ div#botoes-menu li{
     align-items: center;
     justify-items: center;
     align-content: center;
-    font-size: 30px;
+    font-size: 23px;
     padding: 0 25px;
 
 }
 #link-menu-logo{
     display: flex;
-    width: 10%;
-    height: 100%;
+    width: 9.5%;
+    height: 90%;
     padding-left: 18px;
     text-decoration: none;
     color: white;
