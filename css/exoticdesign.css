@@ -5,7 +5,9 @@
     --roxo: #202040 
 }
 body{
-    background-color: #CFCFE7
+    background-color: #CFCFE7;
+    margin: 0;
+    padding: 0;
 }
 *{
     margin: 0;
@@ -91,6 +93,18 @@ div#botoes-menu li{
 div#botoes-menu #link-menu1:hover{
     background-color: var(--verde);
 }
+/* >>> HEADER <<< */
+.banner{
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+}
+.div-exotic{
+    display: grid;
+    justify-content: center;
+}
 /* >>> BLOCOS <<< */
 section {
     position: relative;
@@ -158,4 +172,23 @@ section .box:hover .content {
     background-color: #202040;
     width: 100vw;
     height: 180px;
+    display: flex;
+    justify-content: flex-end;
+}
+div.botao-top{
+    background-color: #E04060;
+    width: 180px;
+    height: 50px;
+    display: flex;
+    align-self: center;
+    margin-right: 60px;
+}
+#botao{
+    font-family: Cambria;
+    font-size: 20px;
+    color: #c0c060;
+    margin-left: 13px;
+    display: flex;
+    align-self: center;
+    text-decoration: none;
 }
