@@ -189,7 +189,8 @@ body section.main-slide-button{
 #i3:checked ~ .banner-box{margin-left: -3000px;}
 
 body .content{
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -197,8 +198,9 @@ body .content{
 
 .content div.how-to{
     display: grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 30% 30% 30%;
     grid-template-rows: 25vw;
+    margin-left: 7%;
 }
 
 .how-to #one{
@@ -231,18 +233,17 @@ body .content{
     align-items: center;
     justify-content: center;
     margin-top: -45px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 5%;
+   
 }
 .how-to div p{
     font-family: Cambria;
+    width: 60%;
     font-size: 22px;
+    text-align: center;
     font-style: initial;
     font-weight: bolder;
     color: #202040;
-    margin-left: 10px;
-    margin-right: 120px;
-
 }
 .manchetes .manchete-1,
 .manchetes .manchete-2{
@@ -257,6 +258,9 @@ body .content{
     margin-bottom: 20px;
     background-color: var(--roxo);
     border-radius: 8px;
+    
+}
+.manchetes .manchete-1{
     margin-top: 140px;
 }
 #content-text-button{
