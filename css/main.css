@@ -48,6 +48,7 @@ body{
 }
 #dropdown #mother .loja{
     width: 80px;
+    height: 24px;
     justify-content: center;
     align-items: center;
     margin-right: 10px;
@@ -73,7 +74,8 @@ body section.main-slide-button{
     align-items: center;
     justify-content: center;
 }
-.top-menu-bar a {
+.top-menu-bar a,
+.top-menu-bar p {
 	display: flex;
 	padding:0 10px;	
 	color:#FFF;
@@ -81,7 +83,7 @@ body section.main-slide-button{
 	line-height: 60px;
 	text-decoration:none;
 }
-.top-menu-bar a.loja {
+.top-menu-bar p.loja {
 	padding: 0;
 }
 .top-menu-bar #container:hover,
