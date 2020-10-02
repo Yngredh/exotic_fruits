@@ -232,7 +232,8 @@ body .content{
     justify-content: center;
 }
 
-.manchetes .manchete-1{
+.manchetes .manchete-1,
+.manchetes .manchete-2{
     display: flex;
     width: 69%;
     height: 58vh;
@@ -246,7 +247,7 @@ body .content{
     border-radius: 8px;
 
 }
-.manchete-1 #content-text-button{
+#content-text-button{
     display: flex;
     justify-content: center;
     align-items: center;;
@@ -255,8 +256,12 @@ body .content{
     width: 100%;
     height: 100%;
 }
-.manchete-1 #container-manchete{
+#container-manchete{
     width: 60%;
+    padding-right: 15px;
+}
+#container-manchete2{
+    width: 82.5%;
     padding-right: 15px;
 }
 .manchete-1 #texto-manchete1,
@@ -270,6 +275,18 @@ body .content{
     color: var(--verde);
     text-align: center;
 }
+.manchete-2 #texto-manchete2,
+.manchete-2 #link-manchete2{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;;
+    align-content: flex-end;
+    justify-items: flex-end;
+    font-size: 38px;
+    color: var(--verde);
+    text-align: center;
+    padding-left: 35px;
+}
 .manchete-1 #link-manchete1 a{
     text-decoration: none;
     background-color: var(--rosa);
@@ -277,11 +294,21 @@ body .content{
     font-size: 20px;
     border-radius: 8px;
 }
-.manchete-1 #texto-manchete1 #destaque{
+.manchete-2 #link-manchete2 a{
+    text-decoration: none;
+    background-color: var(--rosa);
+    color: white;
+    width: 50%;
+    font-size: 20px;
+    border-radius: 8px;
+}
+#texto-manchete1 #destaque,
+#texto-manchete2 #destaque{
     color: var(--rosa);
 }
 
-.manchete-1 #div-manchete-1{
+.manchete-1 #div-manchete-1,
+.manchete-2 #div-manchete-2{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -290,8 +317,18 @@ body .content{
     width: 97%;
     height: 88%;
 }
-.manchete-1 #imagem-manchete-1{
+.manchete-2 #div-manchete-2{
+    order: -1;
+}
+.manchete-1 #imagem-manchete-1
+{
     width: 100%;
     height: 100%;
     padding-right: 130px;
+}
+.manchete-2 #imagem-manchete-2
+{
+    width: 100%;
+    height: 100%;
+    padding-left: 100px;
 }
