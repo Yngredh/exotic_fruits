@@ -226,12 +226,24 @@ body .content{
 }
 
 .how-to div#icon-content{
-    width: 90%;
+    width: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: -45px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
+.how-to div p{
+    font-family: Cambria;
+    font-size: 22px;
+    font-style: initial;
+    font-weight: bolder;
+    color: #202040;
+    margin-left: 10px;
+    margin-right: 120px;
 
+}
 .manchetes .manchete-1,
 .manchetes .manchete-2{
     display: flex;
@@ -245,7 +257,7 @@ body .content{
     margin-bottom: 20px;
     background-color: var(--roxo);
     border-radius: 8px;
-
+    margin-top: 140px;
 }
 #content-text-button{
     display: flex;
