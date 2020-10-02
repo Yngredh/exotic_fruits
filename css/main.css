@@ -57,6 +57,11 @@ body{
     display: flex;
     align-items: center;
 }
+.top-menu-bar #container{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
 
 #dropdown #historia .saiba-menos{
     margin-right: 25px;
