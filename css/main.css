@@ -279,7 +279,7 @@ body .content{
 .manchete-2 #link-manchete2{
     display: flex;
     justify-content: center;
-    align-items: flex-end;;
+    align-items: center;
     align-content: flex-end;
     justify-items: flex-end;
     font-size: 38px;
@@ -314,7 +314,7 @@ body .content{
     align-items: center;
     align-content: center;
     justify-items: center;
-    width: 97%;
+    width: 100%;
     height: 88%;
 }
 .manchete-2 #div-manchete-2{
