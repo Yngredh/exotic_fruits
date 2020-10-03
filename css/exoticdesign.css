@@ -72,14 +72,14 @@ div#botoes-menu li{
     width: 100%;
     height: 65%;
     text-decoration: none;
+    font-family: "Corbel";
     color: white;
     justify-content: center;
     align-items: center;
     justify-items: center;
     align-content: center;
-    font-size: 23px;
+    font-size: 25px;
     padding: 0 25px;
-
 }
 #link-menu-logo{
     display: flex;
@@ -139,7 +139,7 @@ section .box .img {
     position: relative;
     width: 260px;
     top: -60px;
-    left: 20px;
+    left: 5px;
     z-index: 1;
 }
 section .box .img img {
@@ -163,13 +163,18 @@ section .box:hover .content {
     transition-delay: 0.3s;
 }
 .fruit-name {
-    margin-left: 30px;
+    margin-left: 20px;
     font-size: 20px;
+    margin-top: -50px;
+    font-family: "Tahoma";
+    font-weight: bolder;
+    color: var(--rosa)
 }
 .fruit-price {
     display: flex;
     margin-right: 30px;
     margin-top: 10px;
+    font-family: "Tahoma";
     justify-content: flex-end;
 }
 /* >>> MENU END <<< */
@@ -178,22 +183,38 @@ section .box:hover .content {
     width: 100vw;
     height: 180px;
     display: flex;
-    justify-content: flex-end;
+    align-items: flex-end;
 }
 div.botao-top{
-    background-color: #E04060;
-    width: 180px;
-    height: 50px;
+    width: 50%;
+    height: 100%;
     display: flex;
-    align-self: center;
+    justify-content: flex-end;
+    align-items: center;
     margin-right: 60px;
 }
 #botao{
-    font-family: Cambria;
+    background-color: #E04060;
+    border-radius: 0.25rem;
+    font-family: "Corbel";
+    font-weight: bold;
     font-size: 20px;
     color: #c0c060;
-    margin-left: 13px;
+    width: 28%;
+    height: 20%;
     display: flex;
-    align-self: center;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
+}
+.imglogo{
+    display: flex;
+    align-self: flex-start;
+    width: 50%;
+    height: 100%;
+    margin-left: 12px;
+}
+#logo2{
+    width: 30%;
+    height: 100%;
 }

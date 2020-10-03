@@ -48,7 +48,7 @@ body{
 }
 #dropdown #mother .loja{
     width: 80px;
-    height: 24px;
+    height: 19px;
     justify-content: center;
     align-items: center;
     margin-right: 10px;
@@ -66,6 +66,7 @@ body{
 
 #dropdown #historia .saiba-menos{
     margin-right: 25px;
+    font-family: "Corbel";
 }
 
 body section.main-slide-button{
@@ -81,7 +82,8 @@ body section.main-slide-button{
 	color:#FFF;
 	font-size:20px;
 	line-height: 60px;
-	text-decoration:none;
+    text-decoration:none;
+    font-family: "Corbel";
 }
 .top-menu-bar p.loja {
 	padding: 0;
@@ -237,7 +239,7 @@ body .content{
    
 }
 .how-to div p{
-    font-family: Cambria;
+    font-family: "corbel";
     width: 60%;
     font-size: 22px;
     text-align: center;
@@ -290,6 +292,7 @@ body .content{
     font-size: 38px;
     color: var(--verde);
     text-align: center;
+    font-family: "Tahoma";
 }
 .manchete-2 #texto-manchete2,
 .manchete-2 #link-manchete2{
@@ -302,6 +305,7 @@ body .content{
     color: var(--verde);
     text-align: center;
     padding-left: 35px;
+    font-family: "Tahoma";
 }
 .manchete-1 #link-manchete1 a{
     text-decoration: none;
