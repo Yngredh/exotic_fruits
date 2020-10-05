@@ -7,10 +7,11 @@
 body{
     margin: auto auto;
     background-color:var(--fundo);
+    width: 99vw;
     overflow-x: hidden
 }
 .top-menu-bar{
-    width: 98.6vw;
+    width: 99vw;
     height: 40%;
     background-color:var(--roxo);
     display: flex;
