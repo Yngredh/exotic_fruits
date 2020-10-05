@@ -163,12 +163,19 @@ section .box:hover .content {
     transition-delay: 0.3s;
 }
 .fruit-name {
+    width: 240px;
     margin-left: 20px;
     font-size: 20px;
     margin-top: -50px;
     font-family: "Tahoma";
     font-weight: bolder;
     color: var(--rosa)
+}
+#selo{
+    width: 9%;
+    height: 9%;
+    padding-left: 10px;
+    padding-top: -10px;
 }
 .fruit-price {
     display: flex;
