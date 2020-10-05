@@ -133,6 +133,10 @@ h2{
     text-decoration: none;
 }
 
+@keyframes spin{
+    to { transform: rotate(360deg);}
+}
+
 /*texto com logo*/
 .logotxt{
     display: grid;
@@ -177,6 +181,7 @@ h2{
     margin: 0 auto;
     max-width: 70%; 
     text-align: right;
+    padding-bottom: 235px;
 }
 
 .val{
@@ -185,12 +190,15 @@ h2{
     background-image: url("../imagens/Valores.png");
     background-size: cover;
     background-color:white;
-    width: 450px;
-    height: 450px;
-    border-radius: 50%;
+    width: 440px;
+    height: 440px;
     float: right;
    shape-outside: circle() margin-box; 
    margin: 5%;
+ 
+   border: 10px solid rgba(0, 0, 0, .1);
+   border-left-color: #E04060;
+   border-radius: 50%;
 }
 
 
@@ -206,6 +214,7 @@ h2{
 .historia{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 5%;
 }
 
 .historia img{
@@ -226,13 +235,16 @@ h2{
     background-position: center;
     background-image: url("../imagens/Selo.png");
     background-color: #FFF;
-    width: 450px;
-    height: 450px;
+    width: 440px;
+    height: 440px;
     border-radius: 50%;
     float: left;
    shape-outside: circle() margin-box; 
    margin: 5%;
 
+   border: 10px solid rgba(0, 0, 0, .1);
+   border-right-color: var(--verde);
+   border-radius: 50%;
 }
 
 /*Imagem rodapé*/
