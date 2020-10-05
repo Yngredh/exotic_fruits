@@ -130,7 +130,6 @@ h2{
     font-family:"Corbel";
     font-size: 38px;
     line-height: 100%;
-    text-decoration: none;
 }
 
 @keyframes spin{
@@ -140,17 +139,23 @@ h2{
 /*texto com logo*/
 .logotxt{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 5%;
-    max-width: 85%;
+    max-width: 50%;
     margin: 0 auto;
     padding-bottom: 30px;
 }
 
-.logotxt > :nth-child(2){
-    background-color: var(--roxo);
-    align-self: center;
+.logotxt img{
+    grid-column: 1;
+    grid-row: 1/3;
+    margin: 0 auto;
+}
+
+.logotxt p{
+    background-color: var(--verde);
+    padding: 10px;
     border-radius: 20px;
+    grid-column: 1;
+    grid-row: 2;
 }
 
 
