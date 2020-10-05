@@ -2,7 +2,8 @@
 :root{
     --rosa: #E04060;
     --verde: #c0c060;
-    --roxo: #202040 
+    --roxo: #202040;
+    --fundo: #CFCFE7;
 }
 body{
     margin: auto auto;
@@ -113,16 +114,91 @@ body .content{
 }
 
 /*Conteúdo da página Sobre nós*/
+img{
+    max-width: 100%;
+    display: block;
+}
+
+p{
+    font-family:"Corbel";
+    font-size: 20px;
+    line-height: 100%;
+    text-decoration: none;
+}
+
+h2{
+    font-family:"Corbel";
+    font-size: 38px;
+    line-height: 100%;
+    text-decoration: none;
+}
+
+/*texto com logo*/
 .logotxt{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 5%;
     max-width: 85%;
     margin: 0 auto;
 }
 
 .logotxt > :nth-child(2){
-    display: block;
-    background-color: aliceblue;
+    background-color: var(--roxo);
     align-self: center;
     border-radius: 20px;
+    
+}
+
+
+/*Nosso diferencial*/
+.diferencial{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5%
+    margin: 0 auto;
+
+}
+
+.diferencial img{
+    width: 610;
+    height: 390px;
+}
+
+
+/*Nossa história*/
+.historia{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.historia img{
+    width: 610;
+    height: 390px;
+}
+/*Como contribuir*/
+
+
+.cont{
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+.contribuicao{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../imagens/Selo.png");
+    background-color: #FFF;
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    float: left;
+   shape-outside: circle() margin-box; 
+   margin: 5%;
+
+}
+
+/*Imagem rodapé*/
+.rodape img{
+    width: 100%;
+    height: 5%;
 }
