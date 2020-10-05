@@ -140,32 +140,69 @@ h2{
     grid-gap: 5%;
     max-width: 85%;
     margin: 0 auto;
+    padding-bottom: 30px;
 }
 
 .logotxt > :nth-child(2){
     background-color: var(--roxo);
     align-self: center;
     border-radius: 20px;
-    
 }
 
 
 /*Nosso diferencial*/
+.articlebox1{
+    background-color: var(--verde);
+    border-radius: 20px;
+    max-width: 92.5%;
+    margin: 0 auto;
+    padding: 30px;
+}
+
 .diferencial{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 5%
-    margin: 0 auto;
-
 }
 
 .diferencial img{
     width: 610;
     height: 390px;
+    border-radius: 10px;
+}
+
+
+/*Valores*/
+.valores{
+    margin: 0 auto;
+    max-width: 70%; 
+    text-align: right;
+}
+
+.val{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../imagens/Valores.png");
+    background-size: cover;
+    background-color:white;
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    float: right;
+   shape-outside: circle() margin-box; 
+   margin: 5%;
 }
 
 
 /*Nossa história*/
+.articlebox2{
+    background-color: var(--roxo);
+    border-radius: 20px;
+    max-width: 92.5%;
+    margin: 0 auto;
+    padding: 30px;
+}
+
 .historia{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -174,10 +211,11 @@ h2{
 .historia img{
     width: 610;
     height: 390px;
+    border-radius: 10px;
 }
+
+
 /*Como contribuir*/
-
-
 .cont{
     margin: 0 auto;
     max-width: 70%;
