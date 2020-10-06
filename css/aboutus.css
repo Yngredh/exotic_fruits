@@ -54,12 +54,12 @@ body{
     height: 19px;
     justify-content: center;
     align-items: center;
-    margin-right: 9.5vw;
 }
 
 .top-menu-bar #container{
     display: flex;
     align-items: center;
+    margin-right: 0.5vw;
 }
 .top-menu-bar #container{
     display: flex;
@@ -92,6 +92,7 @@ body section.main-slide-button{
 }
 
 .top-menu-bar ul.children {
+    margin-left: -4.2%;
     display: none;
     position: absolute;
 }
