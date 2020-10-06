@@ -227,6 +227,8 @@ h2{
     border-radius: 20px;
     max-width: 92.5%;
     margin: 0 auto;
+
+    align-items: center;
 }
 
 .info{
@@ -263,6 +265,8 @@ h2{
     padding-bottom: 25vh;
     margin-bottom: 5%;
     margin-top: 5%;
+
+    align-items: center;
 }
 
 .val{
@@ -289,6 +293,8 @@ h2{
     max-width: 92.5%;
     margin: 0 auto;
     padding: 30px;
+
+    align-items: center;
 }
 
 .diferencial{
@@ -320,18 +326,12 @@ h2{
 
 /*                                            BLOCO 2                                             */
 /*Nossa história*/
-.articlebox2{
-    background-color: var(--roxo);
-    border-radius: 20px;
-    max-width: 92.5%;
-    margin: 0 auto;
-    padding: 30px;
-}
-
 .historia{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 2%;
+
+    align-items: center;
 }
 .historia #img3{
     width: 100%;
@@ -360,19 +360,24 @@ h2{
 .cont{
     margin: 0 auto;
     max-width: 85%;
+
+    align-items: center;
 }
 
 .contribuicao{
     background-repeat: no-repeat;
+    background-size: 65%;
     background-position: center;
     background-image: url("../imagens/Selo.png");
     background-color: #FFF;
-    width: 440px;
-    height: 440px;
+    width: 30vw;
+    height: 60vh;
     border-radius: 50%;
     float: left;
     shape-outside: circle() margin-box; 
     margin: 2%;
+
+    
     border: 10px solid rgba(0, 0, 0, .1);
     border-right-color: var(--verde);
     border-radius: 50%;
