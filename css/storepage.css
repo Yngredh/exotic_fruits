@@ -151,7 +151,7 @@ section .box {
 }
 
 section .box:hover {
-    height: 500px;
+    height: 390px;
 }
 
 section .box .img {
@@ -222,6 +222,11 @@ section .box:hover .content {
     justify-content: flex-end;
 }
 
+.about{
+    font-family: Tahoma;
+    font-size: 15px;
+    color: #202040;
+}
 /* >>> MENU END <<< */
 
 footer{
