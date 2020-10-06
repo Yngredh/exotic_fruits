@@ -153,6 +153,7 @@ section{
 }
 
 .Bloco1{
+    margin-top: ;
     position: relative;
     bottom: -200px;
     background-color: var(--rosa);
@@ -183,7 +184,7 @@ section{
 }
 
 
-/*                            BLOCO 1                              */
+/*                                          BLOCO 1                                             */
 /*texto com logo*/
 .logotxt{
     display: grid;
@@ -289,7 +290,7 @@ section{
 }
 
 
-/*                            BLOCO 2                              */
+/*                                            BLOCO 2                                             */
 /*Nossa história*/
 .articlebox2{
     background-color: var(--roxo);
@@ -312,6 +313,7 @@ section{
 }
 
 
+/*                                            BLOCO 3                                             */
 /*Como contribuir*/
 .cont{
     margin: 0 auto;
