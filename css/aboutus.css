@@ -134,8 +134,10 @@ img{
 }
 
 p{
+    width: 100%;
+    height: 100%;
     font-family:"Corbel";
-    font-size: 20px;
+    font-size: 24px;
     line-height: 100%;
     text-decoration: none;
 }
@@ -148,14 +150,10 @@ h2{
 
 
 /*Sections -> bloco*/
-section{
-    
-}
 
 .Bloco1{
-    margin-top: ;
     position: relative;
-    bottom: -200px;
+    bottom: -16vw;
     background-color: var(--rosa);
     border-radius: 20px;
     max-width: 92.5%;
@@ -165,22 +163,23 @@ section{
 
 .Bloco2{
     position: relative;
-    bottom: -220px;
+    bottom: -12vw;
     background-color: var(--verde);
     border-radius: 20px;
     max-width: 92.5%;
-    margin: 0 auto;
+    margin: 5% auto;
     padding: 30px;
 }
 
 .Bloco3{
     position: relative;
-    bottom: -240px;
+    bottom: -9vw;
     background-color: var(--roxo);
     border-radius: 20px;
     max-width: 92.5%;
-    margin: 0 auto;
-    padding: 30px;
+    height: 59vh;
+    margin: 5% auto;
+    padding: 15px;
 }
 
 
@@ -188,6 +187,7 @@ section{
 /*texto com logo*/
 .logotxt{
     display: grid;
+    gap: 16vw;
     max-width: 50%;
     margin: 0 auto;
     padding-bottom: 30px;
@@ -197,7 +197,7 @@ section{
     width: 175%;
     height: auto;
     position: relative;
-    top: -50%;
+    margin-top: -35%;
     justify-self: center;
     border-radius: 10px;
     padding-bottom: -500px;
@@ -227,28 +227,45 @@ section{
     border-radius: 20px;
     max-width: 92.5%;
     margin: 0 auto;
-    padding: 30px;
 }
 
 .info{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 5%
+    grid-gap: 3%
 }
-
-.info img{
-    width: 610;
-    height: 390px;
+.info #text1{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.info #text10{
+    width: 80%;
+    height: 100%;
+    text-align: center;
+}
+.info #img{
+    width: 100%;
+    height: 92%;
     border-radius: 10px;
 }
 
+.info img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
 
 /*Valores*/
 .valores{
     margin: 0 auto;
     max-width: 70%; 
     text-align: right;
-    padding-bottom: 235px;
+    padding-bottom: 25vh;
+    margin-bottom: 5%;
+    margin-top: 5%;
 }
 
 .val{
@@ -280,12 +297,19 @@ section{
 .diferencial{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 5%
+    grid-gap: 2%
+}
+.diferencial #img2{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .diferencial img{
-    width: 610;
-    height: 390px;
+    width: 95%;
+    height: 95%;
     border-radius: 10px;
 }
 
@@ -303,12 +327,20 @@ section{
 .historia{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 5%;
+    grid-gap: 2%;
+}
+.historia #img3{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
 }
 
 .historia img{
-    width: 610;
-    height: 390px;
+    width: 98%;
+    height: 81%;
     border-radius: 10px;
 }
 
@@ -317,7 +349,7 @@ section{
 /*Como contribuir*/
 .cont{
     margin: 0 auto;
-    max-width: 70%;
+    max-width: 85%;
 }
 
 .contribuicao{
@@ -329,11 +361,10 @@ section{
     height: 440px;
     border-radius: 50%;
     float: left;
-   shape-outside: circle() margin-box; 
-   margin: 5%;
-
-   border: 10px solid rgba(0, 0, 0, .1);
-   border-right-color: var(--verde);
-   border-radius: 50%;
+    shape-outside: circle() margin-box; 
+    margin: 2%;
+    border: 10px solid rgba(0, 0, 0, .1);
+    border-right-color: var(--verde);
+    border-radius: 50%;
 }
 
