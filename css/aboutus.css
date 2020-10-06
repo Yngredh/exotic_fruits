@@ -7,7 +7,9 @@
 }
 body{
     margin: auto auto;
-    background-color: #CFCFE7;
+    background-color:var(--fundo);
+    width: 99vw;
+    overflow-x: hidden
 }
 .top-menu-bar{
     width: 99vw;
@@ -49,30 +51,48 @@ body{
 }
 #dropdown #mother .loja{
     width: 80px;
+    height: 19px;
     justify-content: center;
     align-items: center;
     margin-right: 10px;
 }
 
-#dropdown #historia .saiba-menos{
-    margin-right: 15px;
+.top-menu-bar #container{
+    display: flex;
+    align-items: center;
+}
+.top-menu-bar #container{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 }
 
-body div.main-slide-button{
+#dropdown #historia .saiba-menos{
+    margin-right: 25px;
+    font-family: "Corbel";
+}
+
+body section.main-slide-button{
     width: 99vw;
     display: inline-flex;
     align-items: center;
     justify-content: center;
 }
-.top-menu-bar a {
+.top-menu-bar a,
+.top-menu-bar p {
 	display: flex;
 	padding:0 10px;	
 	color:#FFF;
 	font-size:20px;
 	line-height: 60px;
-	text-decoration:none;
+    text-decoration:none;
+    font-family: "Corbel";
 }
-.top-menu-bar a:hover{
+.top-menu-bar p.loja {
+	padding: 0;
+}
+.top-menu-bar #container:hover,
+.GreenButton a:hover{
     background-color:var(--verde);
 }
 
@@ -106,16 +126,10 @@ body div.main-slide-button{
 }
 
 
-body .content{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 /*Conteúdo da página Sobre nós*/
 img{
-    max-width: 100%;
     display: block;
 }
 
@@ -132,10 +146,44 @@ h2{
     line-height: 100%;
 }
 
-@keyframes spin{
-    to { transform: rotate(360deg);}
+
+/*Sections -> bloco*/
+section{
+    
 }
 
+.Bloco1{
+    position: relative;
+    bottom: -200px;
+    background-color: var(--rosa);
+    border-radius: 20px;
+    max-width: 92.5%;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.Bloco2{
+    position: relative;
+    bottom: -220px;
+    background-color: var(--verde);
+    border-radius: 20px;
+    max-width: 92.5%;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.Bloco3{
+    position: relative;
+    bottom: -240px;
+    background-color: var(--roxo);
+    border-radius: 20px;
+    max-width: 92.5%;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+
+/*                            BLOCO 1                              */
 /*texto com logo*/
 .logotxt{
     display: grid;
@@ -145,21 +193,34 @@ h2{
 }
 
 .logotxt img{
+    width: 175%;
+    height: auto;
+    position: relative;
+    top: -50%;
+    justify-self: center;
+    border-radius: 10px;
+    padding-bottom: -500px;
+
     grid-column: 1;
     grid-row: 1/3;
-    margin: 0 auto;
-}
+}   
 
-.logotxt p{
-    background-color: var(--verde);
+.logotxt h1{
+    background-color: var(--roxo);
+    color: #FFF;
     padding: 10px;
     border-radius: 20px;
+    font-family:"Corbel";
+    font-size: 40px;
+    line-height: 100%;
+    text-align: center;
+
     grid-column: 1;
     grid-row: 2;
 }
 
 
-/*Nosso diferencial*/
+/*Informações*/
 .articlebox1{
     background-color: var(--verde);
     border-radius: 20px;
@@ -168,13 +229,13 @@ h2{
     padding: 30px;
 }
 
-.diferencial{
+.info{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 5%
 }
 
-.diferencial img{
+.info img{
     width: 610;
     height: 390px;
     border-radius: 10px;
@@ -202,11 +263,33 @@ h2{
    margin: 5%;
  
    border: 10px solid rgba(0, 0, 0, .1);
-   border-left-color: #E04060;
+   border-left-color: #f38db4;
    border-radius: 50%;
 }
 
+/*Nosso diferencial*/
+.articlebox1{
+    background-color: var(--verde);
+    border-radius: 20px;
+    max-width: 92.5%;
+    margin: 0 auto;
+    padding: 30px;
+}
 
+.diferencial{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5%
+}
+
+.diferencial img{
+    width: 610;
+    height: 390px;
+    border-radius: 10px;
+}
+
+
+/*                            BLOCO 2                              */
 /*Nossa história*/
 .articlebox2{
     background-color: var(--roxo);
@@ -252,8 +335,3 @@ h2{
    border-radius: 50%;
 }
 
-/*Imagem rodapé*/
-.rodape img{
-    width: 100%;
-    height: 5%;
-}
