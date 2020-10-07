@@ -183,7 +183,7 @@ section .box:hover .content {
     visibility: visible;
     opacity: 1;
     margin-top: 10px;
-    transition-delay: 0.3s;
+    transition-delay: 0.1s;
 }
 
 .botao{
