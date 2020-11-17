@@ -1,0 +1,47 @@
+.concluded-block{
+    width: 1000px;
+    height: 300px;
+    margin-left: 460px;
+    margin-right: 460px;
+    margin-top: 180px;
+    
+    background: linear-gradient(91.96deg, #E04060 11.13%, #C0C060 91.77%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    box-sizing: border-box;
+    
+    overflow: hidden;
+    text-align: center;
+    padding-top: 30px;
+}
+#concluded{
+    width: 80%;
+}
+.kb-button{
+    width: 500px;
+    height: 50px;
+    background-color: #202040;
+    border-radius: 2rem;
+    mix-blend-mode: normal;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+    margin-left: 710px;
+    margin-right: 710px;
+    margin-top: 135px;
+    
+    display: flex;
+    align-items: center;
+}
+.kb-button a{
+    color: white;
+    font-size: 28px;
+    font-family:"Corbel";
+    text-decoration: none;
+
+    text-align: center;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+.kb-button:hover{
+    background-color: #E04060;
+}
