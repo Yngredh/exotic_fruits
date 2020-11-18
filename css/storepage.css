@@ -23,7 +23,7 @@ html{
 
 /* >>> MENU <<< */
 nav.menu{
-    width: 99vw;
+    width: 100vw;
     height: 11vh;
     background-color:var(--roxo);
     display: flex;
@@ -31,7 +31,7 @@ nav.menu{
 
 nav.menu ul{
     list-style: none;
-    width: 99vw;
+    width: 100vw;
     height: 11vh;
     display: flex;
     justify-content: center;
