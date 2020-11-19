@@ -28,6 +28,9 @@
     position: relative;
     justify-content: space-between;
 }
+.cart .add #option1 label{
+    font-family: "Tahoma";
+}
 .cart .add #option1 #openList{
     margin-right: 10px;
     cursor: pointer;
@@ -50,6 +53,7 @@
 .cart .add #itemAdd #nameAdd{
     margin: 0;
     width: 90%;
+    font-family: "Tahoma";
 }
 .cart .add #itemAddContent{
     margin-left: -45%;
@@ -62,13 +66,21 @@
 .cart .add #itemAdd #itemAddPrecoContainer{
     display: flex;
 }
+.cart .add #itemAdd #itemAddPrecoContainer p{
+    font-family: "Arial";
+}
+.cart h1, 
+.cart h2{
+    font-family: "Tahoma";
+    font-weight: bolder;
+}
 #info{
     display: grid;
     columns: 50% 25% 25%;
     justify-content: space-between;
     align-items: center;
 }
-body #itemsContainer{
+body #itensContainer{
     max-height: 60vh;
     overflow: hidden;
     overflow-y: scroll;
@@ -90,37 +102,47 @@ body #itemsContainer{
     width: 6vw;
     height: 10vh;
 }
-#info #itemsDado{
+#info #itensDado{
     grid-column-start: 2;
     width: 4vw;
     margin-top: 38%;
 }
-#info #itemsDado #nome{
+#info #itensDado #nome{
     margin-top: 16px;
     margin-bottom: 0;
     margin-right: 5px;
+    font-family: "Tahoma";
+    font-size: 20px;
+    font-weight: 500;
+    color: #202040
 }
 #precoContainer{
     display: flex;
 }
-#precoContainer #itemsMoeda,
-#precoContainer #itemsPreço{
-    margin-top: 16px;
+#precoContainer p{
+    font-family: "Arial";
+    font-size: 18px;
+    color: #202040
+}
+#precoContainer #itensMoeda,
+#precoContainer #itensPreço{
     margin-bottom: 0;
     margin-right: 5px;
 }
-#itemsQuantidade {
+#itensQuantidade {
     grid-column-start: 3;
     width: 4vw;
     margin-top: -10%;
 }
-#itemsQuantidade .quantidade{
+#itensQuantidade .quantidade{
     width: 70%;
     margin-left: 0.8vw;
 }
-#itemsQuantidade #qtdText{
+#itensQuantidade #qtdText{
     width: 100%;
     text-align: end;
+    font-family: "Corbel";
+    font-weight: 500;
 }
 
 .closeButton{
@@ -133,6 +155,10 @@ body #itemsContainer{
     justify-content: space-between;
     margin-bottom: 0;
 }
+#preco .sub-design{
+    font-family: "Corbel";
+}
+
 hr{
     margin-top: -15px;
     margin-bottom: 30px;
@@ -152,6 +178,8 @@ hr{
 #resultFinal #totalContainer #precoTotal{
     margin-top: 0;
     color: #202040;
+    font-family: "Tahoma";
+    font-size: 23px;
 }
 h1,
 h2{

@@ -1,7 +1,7 @@
 const listaDeItems = [listaDeFrutas[1],listaDeFrutas[8],listaDeFrutas[9],listaDeFrutas[5]];
 localStorage.setItem('listaDeItensCart', listaDeItems)
 
-const itemContainer = document.getElementById('itemsContainer');
+const itemContainer = document.getElementById('itensContainer');
 const itemPadrao = document.getElementById('lista-item-0');
 var items = listaDeItems.length;
 
@@ -58,7 +58,7 @@ function adicionarItemAoCarrinho(elt){
 
     mudarChildsLista(item,listaDeItems,indice);
     calcularPreco(item)
-    $("#itemsContainer").scrollTop($("#itemsContainer")[0].scrollHeight);
+    $("#itensContainer").scrollTop($("#itensContainer")[0].scrollHeight);
     
 }
 
