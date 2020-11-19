@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cart.css">
+    <title>Cart</title>
+</head>
+<body>
+    
+</body>
+    <div class="cart">
+        <h1>Carrinho</h1>
+        <div class="add">
+            <ul type="none" id="selecionarFrutas"
+            >
+                    <li id="option1">
+                        <label> Adicionar frutas</label>
+                        <img id="openList" src="imagens/toggleButton.svg" onclick="controlarDropdown();" alt="">
+                    </li>
+                    <li id="option2">      
+                        <div id="add-lista-item-0" class="dropdown">
+                            <article id="itemAdd">
+                                <img id="itemAddImage" alt=""/>
+                                <div id="itemAddContent">
+                                    <p id="nameAdd"></p>
+                                    <div id="itemAddPrecoContainer">
+                                        <p>R$</p><p id="precoAdd"></p>
+                                    </div>
+                                </div>
+                                <img id="0" class="itemAddButton" src="imagens/addButton.svg" onclick="adicionarItemAoCarrinho(this);" alt="">
+                            </article>
+                        </div>
+                    </li>
+                        
+             </ul>
+            
+        </div>
+
+        <div id = "itemsContainer" class="items">
+            <div id="lista-item-0" class="item">
+                <div id="info">
+                    <div id="imgContainer">
+                        <img id="imagemItem"src=""/>
+                    </div>
+                    <div id="itemsDado">
+                        <p id="nome"></p>
+                        <div id="precoContainer">
+                            <p id="itemsMoeda">R$</p> <p id="itemsPreco"></p>
+                        </div>
+                    </div>
+                    <div id="itemsQuantidade">
+                        <img id="close-0" class="closeButton" onclick="removerItem(this);" src="imagens/close.svg" alt="">
+                            <p id="qtdText">Quantidade</p>
+                            <div id="qtdForm">
+                                <input id="qtnd-0" class='quantidade' type="number"
+                                value="1"
+                                min="1"
+                                onchange="calcularPreco(this);">
+                            </div>
+                    </div>
+                </div>
+                <div id="preco">
+                    <p>Subtotal</p>
+                    <div id="precoContainer">
+                        <p id="itemsMoeda">R$</p> <p class="subprecos" id="Subpreco">450</p>
+                    </div>
+                </div>
+                <hr>
+            </div>
+
+        </div>   
+        <div id="resultFinal">
+            <div id="totalContainer">
+                <h2>TOTAL</h2>
+                <p id="precoTotal"></p>
+            </div>
+            <hr>
+        </div> 
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type= "text/javascript"src="scripts/frutasClass.js"></script>
+    <script type= "text/javascript"src="scripts/frutasList.js"></script>
+    <script type= "text/javascript"src="scripts/cartSetData.js"></script>
+    <script type= "text/javascript"src="scripts/cartItems.js"></script>
+    
+</body>
+</html>
