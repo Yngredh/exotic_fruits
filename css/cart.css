@@ -126,6 +126,7 @@ body #itemsContainer{
 .closeButton{
     margin-left: 87%;
     margin-top: 0%;
+    cursor: pointer;
 }
 #preco{
     display: flex;
