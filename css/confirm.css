@@ -69,13 +69,13 @@ div#botoes-menu{
 
 /* >> CONTEUDO << */
 
-section {
+#conteudo {
     display: grid;
     text-align: center;
     margin: 100px 0px 38px 0px;
 }
 
-p {
+#titulo {
     font-family: "Corbel";
     font-weight: 800;
     font-size: 50px;
@@ -86,7 +86,7 @@ p {
     text-shadow: -3px 3px 5px rgba(0, 0, 0, 0.4);
 }
 
-article {
+.bloco {
     width: 85%;
     height: 700px;
     justify-self: center;
@@ -94,7 +94,46 @@ article {
     background: linear-gradient(252.13deg, rgba(192, 192, 96, 0.85) 21.41%, rgba(224, 64, 96, 0.8) 76.95%);
     box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.4);
     border-radius: 20px;
+
 }
+
+p{
+    font-family: "Corbel";
+    color: #202040;
+
+    font-size: 20px;
+    font-weight: 800;
+}
+
+#data_info{
+    text-align: right;
+    margin-top:100px;
+    margin-right: 83px;
+}
+
+.b1, .b2{
+    display: grid;
+    grid-template-columns: 1fr 40%;
+    margin-top: 100px;
+}
+
+/*BLOCOS*/
+.cliente_info, .cliente_end{
+    text-align: left;
+    margin-left: 83px;
+}
+
+.pagamento, .val_pag{
+    text-align: right;
+    margin-right: 83px;
+}
+
+.end_org{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
 
 /* >> FINALIZAR << */
 

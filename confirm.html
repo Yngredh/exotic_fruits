@@ -24,12 +24,67 @@
             </ul>
         </nav>
 
+        <!-- >>> CONFIRMAÇÃO <<< -->
         <section id="conteudo">
 
-            <p>CONFIRME SEUS DADOS</p>
+            <h1 id="titulo">CONFIRME SEUS DADOS</h1>
 
-            <article>
-                
+            <article class="bloco">
+                <p id="data_info">
+                    <input type="text" name="data" readonly>
+                </p>
+
+                <!-- >>> PRIMEIRO BLOCO <<<<-->
+                <article class="b1">
+                    <div class="cliente_info">
+                        <P>FORNECEDOR: eXotic Fruits</P><br>
+                        <p>CLIENTE: 
+                            <input type="text" name="nome_comp" readonly>
+                        </p><br>
+                        <p>PORTADOR DO RG: 
+                            <input type="text" name="RG" readonly>
+                        </p>
+                    </div>
+                    <div class="pagamento">
+                        <p>
+                            FORMA DE PAGAMENTO ESCOLHIDA:
+                        </p><br>
+                        <p>
+                            <input type="text" name="form_pag" readonly>
+                        </p>
+                    </div>
+                </article>
+
+                <article class="b2">
+                    <div class="cliente_end">
+                        <p>
+                            SERÁ ENTREGUE NO ENDEREÇO:
+                        </p><br>
+                        <br>
+                        <article class="end_org">
+                            <div>
+                                <p>RUA: 
+                                    <input type="text" name="rua" readonly>
+                                </p><br>
+                                <p>CIDADE: 
+                                    <input type="text" name="cidade" readonly>
+                                </p>
+                            </div>
+                            <div>
+                                <p>BAIRRO: 
+                                    <input type="text" name="bairro" readonly>
+                                </p><br>
+                                <p>ESTADO: 
+                                    <input type="text" name="estado" readonly>
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="val_pag">
+                        <p>VALOR A SER PAGO</p><br>
+                        <p>R$<input type="text" name="dinheiro" readonly></p>
+                    </div>
+                </article>
             </article>
 
         </section>
