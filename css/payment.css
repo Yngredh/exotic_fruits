@@ -1,0 +1,386 @@
+/* >>> ALL <<< */
+:root{
+    --rosa: #E04060;
+    --verde: #c0c060;
+    --roxo: #202040 
+}
+
+body{
+    background-color: #CFCFE7;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* >>> MENU <<< */
+nav.menu{
+    width: 99vw;
+    height: 11vh;
+    background-color:var(--roxo);
+    display: flex;
+}
+
+nav.menu ul{
+    list-style: none;
+    width: 99vw;
+    height: 11vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li#logo-box{
+    margin-top: 5px;
+    width: 50%;
+    height: 100%;
+}
+
+#logo{
+    width: 100%;
+    padding-left: 8px;
+}
+
+div#botoes-menu{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 45px;
+}
+
+#link-menu-logo{
+    display: flex;
+    width: 8.5%;
+    height: 90%;
+    padding-left: 18px;
+    text-decoration: none;
+    color: white;
+}
+
+/* >>> BLOCOS <<< */
+
+#conteudo {
+    display: grid;
+    grid-template-columns: 61.4583% 25.2604%;
+    grid-gap: 2.0833%;
+    padding-top: 6.3889%;
+    padding-bottom: 2.7778%;
+    justify-content: center;
+}
+
+/* >> ACCORDIONS << */
+
+/* > DADOS < */
+
+hr {
+    width: 83%;
+    height: 2px;
+    margin-left: 60px;
+    visibility: hidden;
+    background-color: #D3E2E5;
+    border: 1px solid #D3E2E5;
+}
+
+.accordions article.accordion {
+    margin-bottom: 10px;
+    background: #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.accordion_input {
+    display: none;
+}
+
+.accordion_input:checked ~ .accordion_content {
+    display: block;
+}
+
+.accordion_input:checked ~ hr {
+    visibility: visible;
+}
+
+.accordion_label {
+    display: block;
+    font-family: "Corbel";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 34px;
+    margin-left: 40px;
+    color: #202040;
+    cursor: pointer;
+    position: relative;
+    transition: background 0.1s;
+}
+
+.accordion_label::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 30px;
+    width: 28px;
+    height: 24.48px;
+    background-image: url("../imagens/seta.png");
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.4s;
+}
+
+.accordion_input:checked ~ .accordion_label::after {
+    transform: translateY(-50%) rotate(0.5turn);
+}
+
+.accordion_label,
+.accordion_content {
+    padding: 14px 20px;
+    padding-top: 18px;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.accordion_content {
+    height: 560px;
+    background: #ffffff;
+    padding: 40px 70px 0px 70px;
+    display: none;
+}
+
+#accordion_content_ex {
+    padding: 20px 70px 0px 70px;
+}
+
+#form_dados
+.dados_metade {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#form_dados
+.dados_triplo {
+    display: grid;
+    grid-template-columns: 70% 15% 17%;
+}
+
+#form_dados
+label {
+    font-family: "Corbel";
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+    color: #202040;
+}
+
+#form_dados
+input,
+select {
+    height: 33.9px;
+    margin: 5px 0px 20px 0px;
+
+    background: #F5F8FA;
+
+    border: 1px solid #D3E2E5;
+    box-sizing: border-box;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+#certo_dados {
+    position: absolute;
+    margin-top: 22px;
+    right: 36%;
+}
+
+/* > PAGAMENTO < */
+
+.accordions_pagamento article.rosa {
+    width: 600px;
+    background: rgba(224, 64, 96, 0.7);
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.accordion_input_pagamento {
+    width: 30px;
+    height: 30px;
+    /* Centrlizar */
+}
+
+.metadinha {
+    display: grid;
+    align-items: center;
+    margin-bottom: 10px;
+    grid-template-columns: 60px 1fr;
+}
+
+.accordion_input_pagamento:checked + .rosa .accordion_content_pagamento{
+    display: block;
+}
+
+.accordion_label_pagamento {
+    position: relative;
+    height: 70px;
+    display: block;
+    font-family: "Corbel";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    margin-left: 40px;
+    color: black;
+    cursor: pointer;
+}
+
+.teste {
+    display: flex;
+    align-items: center;
+}
+
+.accordion_content_pagamento {
+    height: 375px;
+    padding: 5px 60px 0px 60px;
+    display: none;
+}
+
+#accordion_content_pagamento_boleto {
+    height: 120px;
+}
+
+#form_pagamento
+.pagamento_metade {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#form_pagamento
+label {
+    font-family: "Corbel";
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+    color: black;
+}
+
+#form_pagamento
+input[type="text"],
+input[type="number"],
+input[type="month"] {
+    width: 90%;
+    height: 33.9px;
+    margin: 5px 0px 10px 0px;
+    font-size: 20px;
+    background: #F5F8FA;
+    border: 1px solid #D3E2E5;
+    box-sizing: border-box;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+#form_pagamento
+input[type="radio"] {
+    height: 20px;
+    width: 20px;
+    margin: 12px 0px 23px 0px;
+}
+
+#certo_pagamento_cartao {
+    position: relative;
+    margin-top: -25px;
+    left: 95%;
+}
+
+#certo_pagamento_boleto {
+    margin-left: 450px;
+}
+
+/* > QUESTIONARIO < */
+
+#form_questionario
+.questionario_metade {
+    display: grid;
+    grid-template-columns: 15% 15%;
+}
+
+#form_questionario
+label,
+p {
+    font-family: "Corbel";
+    font-size: 25px;
+    font-weight: bold;
+    color: #202040;
+}
+
+#form_questionario
+textarea{
+    font-size: 25px;
+    background: #F5F8FA;
+    border: 1px solid #D3E2E5;
+    box-sizing: border-box;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    margin: 2px 0px 15px 0px;
+}
+
+#form_questionario
+input[type="radio"] {
+    margin: 10px 0px 15px 0px;
+}
+
+#form_questionario
+input[type="radio"],
+input[type="checkbox"] {
+    height: 20px;
+    width: 20px;
+}
+
+#form_questionario
+input[type="checkbox"] {
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#certo_questionario {
+    position: absolute;
+    margin-top: 45px;
+    right: 36%;
+}
+
+/* >> CARRINHO << */
+
+aside {
+    height: 790px;
+    background: rgba(224, 64, 96, 0.65);
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+/* >> CONFIRMAR << */
+
+#confirmar {
+    display: flex;
+    justify-content: center;
+}
+
+#botao_confirmar {
+    width: 817px;
+    height: 47.19px;
+
+    font-weight: 800;
+    font-size: 18px;
+    color: #FFFFFF;
+
+    margin-bottom: 2.8528%;
+    background: #5CCFA9;
+    mix-blend-mode: normal;
+    border: 0px;
+    border-radius: 20px;
+}

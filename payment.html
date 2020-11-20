@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Adalberto Teshima, Davi Henrique, Lucas Nakahara e Yngredh Cruz">
+
+        <link rel="stylesheet" href="css/payment.css">
+        <link rel="icon" type="image/x-icon" href="imagens/carrinho.png">
+
+        <title>Pagamento</title>
+    </head>
+
+    <body>
+        <!-- >>> MENU <<< -->
+        <nav id="backtop" class="menu">
+            <ul>
+                <li id="logo-box">
+                    <a id="link-menu-logo"  href="index.html"><img id="logo" src="imagens/Logo2.png" alt=""></a>
+                </li>
+                <div id="botoes-menu">
+                   
+                </div>
+            </ul>
+        </nav>
+
+        <section id="conteudo">
+
+            <div class="accordions">
+
+                <article class="accordion">
+                    <input type="radio" name="accordion" id="dados" class="accordion_input">
+                    <label for="dados" class="accordion_label">Dados</label>
+                    <hr>
+                    <div class="accordion_content">
+                        <form name="dados" id="form_dados" action="#">
+
+                            <article class="dados_metade">
+                                <div>
+                                    <label>Nome</label> <br>
+                                    <input type="text" size="50%" name="name">
+                                </div>
+ 
+                                <div>
+                                    <label>Sobrenome</label> <br>
+                                    <input type="text" size="50%" name="lastname">
+                                </div>
+                            </article>
+                            
+                            <article class="dados_metade">
+                                <div>
+                                    <label>Email</label> <br>
+                                    <input type="text" size="50%" name="email">
+                                </div>
+                                
+                                <div>
+                                    <label>RG</label> <br>
+                                    <input type="text" size="50%" name="rg">
+                                </div>
+                            </article>
+
+                            <article class="dados_metade">
+                                <div>
+                                    <label>CPF</label> <br>
+                                    <input type="text" size="50%" name="cpf">
+                                </div>
+                                
+                                <div>
+                                    <label>CEP</label> <br>
+                                    <input type="text" size="50%" name="cep">
+                                </div>
+                            </article>
+
+                            <article class="dados_triplo">
+                                <div>
+                                    <label>Endereço</label> <br>
+                                    <input type="text" size="75%" name="address">
+                                </div>
+                                
+                                <div>
+                                    <label>Estado</label> <br>
+                                    <select name="state" style="width: 80%;">
+                                        <option value=""></option>
+                                        <option value="ES">MG</option>
+                                        <option value="MG">SP</option>
+                                        <option value="RJ">RJ</option>
+                                    </select>
+                                </div>
+
+                                <div>
+                                    <label>Número</label> <br>
+                                    <input type="text" size="8%" name="house_number">
+                                </div>
+                            </article>
+
+                            <article class="dados_metade">
+                                <div>
+                                    <label>Bairro</label> <br>
+                                    <input type="text" size="50%" name="bairro">
+                                </div>
+                                
+                                <div>
+                                    <label>Cidade</label> <br>
+                                    <input type="text" size="50%" name="city">
+                                </div>
+                            </article>
+                            
+                        </form>
+
+                        <input id="certo_dados" type="image" src="imagens/certo.png" alt="button" width="50.14px" height="46.57px" name="send" onclick="verificar_dados(this);">
+
+                    </div>
+                </article>
+
+                <article class="accordion">
+
+                    <input type="radio" name="accordion" id="pagamento" class="accordion_input">
+                    <label for="pagamento" class="accordion_label">Formas de pagamentos</label>
+                    <hr>
+                    <div id="accordion_content_ex" class="accordion_content">
+
+                        <div class="accordions_pagamento">
+                        
+                            <div class="metadinha"><input type="radio" name="accordion_pagamento" id="cartao" class="accordion_input_pagamento">
+                                <article class="rosa">
+                                    <label for="cartao" class="accordion_label_pagamento"><div class="teste" style="padding-top: 5px;"><img src="imagens/cartao.png" style="height: 60px; width: 60px; padding: 0px 22px 0px 9px;">Cartão</div></label>
+                                    <div class="accordion_content_pagamento">
+                                        <form name="pagamento" id="form_pagamento" action="#">
+                                            <article class="pagamento_metade">
+                                                <div>
+                                                    <input type="radio" value="1" name="credito_debito">
+                                                    <label>Crédito</label>
+                                                </div>
+                                                
+                                                <div>
+                                                    <input type="radio" value="2" name="credito_debito">
+                                                    <label>Débito</label>
+                                                </div>
+                                            </article>
+                                            
+                                            <label>Nome do Titular</label> <br>
+                                            <input type="text" name="titular"> <br>
+                                            
+                                            <label>Número do Cartão</label> <br>
+                                            <input type="number" name="n_cartao">
+                                            
+                                            <article class="pagamento_metade">
+                                                <div>
+                                                    <label>Data de Validade</label> <br>
+                                                    <input type="month" name="validade">
+                                                </div>
+                                                
+                                                <div>
+                                                    <label>CVV</label> <br>
+                                                    <input type="number" min="100" max="999" name="cvv">
+                                                </div>
+                                            </article>
+                                            
+                                            <div id="parcelas">
+                                                <label>Parcelas</label> <br>
+                                                <input type="number" value="1" min="1" max="12" name="parcelas">
+                                            </div>
+                                        </form>
+                                        
+                                        <input id="certo_pagamento_cartao" type="image" src="imagens/certo.png" alt="button" width="50.14px" height="46.57px" name="send" onclick="verificar_pagamento(this);">
+                                        
+                                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+                                        <script>
+                                            $('input[name="credito_debito"]').on('change', function() {
+                                            $('#parcelas')
+                                                .toggle(+this.value === 1 && this.checked);
+                                            }).change();
+                                        </script>
+
+                                    </div>
+                                </article>
+                            </div>
+
+                            <div class="metadinha">
+                                <input type="radio" name="accordion_pagamento" id="boleto" class="accordion_input_pagamento">
+                                <article class="rosa">
+                                <label for="boleto" class="accordion_label_pagamento"><div class="teste"><img src="imagens/dinheiro.png" style="height: 70px; width: 80px; padding: 0px 10px 0px 0px;">Boleto</div></label>
+                                
+                                <div id="accordion_content_pagamento_boleto" class="accordion_content_pagamento">
+                                <button style="height: 40px; width: 350px; font-size: 20px; margin-top: 15px;">Clique aqui para gerar seu boleto</button>
+                                <input id="certo_pagamento_boleto" type="image" src="imagens/certo.png" alt="button" width="50.14px" height="46.57px" name="send" onclick="verificar_pagamento(this);">
+                            </div>
+                            
+                            </article></div>
+
+                        </div>
+
+                    </div>
+                </article>
+
+                <article class="accordion">
+
+                    <input type="radio" name="accordion" id="questionario" class="accordion_input">
+                    <label for="questionario" class="accordion_label">Questionário</label>
+                    <hr>
+                    <div class="accordion_content">
+                        <form name="questionario" id="form_questionario" action="#">
+
+                            <p>Deseja receber emails com as novidades do nosso site?</p>
+                            <article class="questionario_metade">
+                                <div>
+                                    <input type="radio" style="margin-left: 25px;" name="sim_nao">
+                                    <label>Sim</label>
+                                </div>
+ 
+                                <div>
+                                    <input type="radio" name="sim_nao">
+                                    <label>Não</label>
+                                </div>
+                            </article>
+                            
+                            <label>Conte como você ficou sabendo do nosso site.</label> <br>
+                            <textarea rows = "8" cols = "40" name = "about"></textarea> <br>
+
+                            <input type="checkbox" style="margin-left: 25px;" name="termos">
+                            <label>Li e aceito os termos de venda da eXotic Fruits</label>
+
+                        </form>
+                        
+                        <input id="certo_questionario" type="image" src="imagens/certo.png" alt="button" width="50.14px" height="46.57px" name="send" onclick="verificar_dados(this);">
+
+                    </div>
+
+                </article>
+            </div>
+    
+            <aside>
+
+            </aside>
+        </section>
+
+        <p id="confirmar">
+            <input id="botao_confirmar" type="button" name="verifica" value="Confirmar" onclick="verificar_fim();">
+        </p>
+    </body>
+</html>
