@@ -6,6 +6,7 @@
         <meta name="author" content="Adalberto Teshima, Davi Henrique, Lucas Nakahara e Yngredh Cruz">
 
         <link rel="stylesheet" href="css/payment.css">
+        <link rel="stylesheet" href="css/cart.css">
         <link rel="icon" type="image/x-icon" href="imagens/carrinho.png">
 
         <title>Pagamento</title>
@@ -38,43 +39,43 @@
                             <article class="dados_metade">
                                 <div>
                                     <label>Nome</label> <br>
-                                    <input type="text" size="50%" name="name">
+                                    <input type="text" size="60%" name="name">
                                 </div>
  
                                 <div>
                                     <label>Sobrenome</label> <br>
-                                    <input type="text" size="50%" name="lastname">
+                                    <input type="text" size="60%" name="lastname">
                                 </div>
                             </article>
                             
                             <article class="dados_metade">
                                 <div>
                                     <label>Email</label> <br>
-                                    <input type="text" size="50%" name="email">
+                                    <input type="text" size="60%" name="email">
                                 </div>
                                 
                                 <div>
                                     <label>RG</label> <br>
-                                    <input type="text" size="50%" name="rg">
+                                    <input type="text" size="60%" name="rg">
                                 </div>
                             </article>
 
                             <article class="dados_metade">
                                 <div>
                                     <label>CPF</label> <br>
-                                    <input type="text" size="50%" name="cpf">
+                                    <input type="text" size="60%" name="cpf">
                                 </div>
                                 
                                 <div>
                                     <label>CEP</label> <br>
-                                    <input type="text" size="50%" name="cep">
+                                    <input type="text" size="60%" name="cep">
                                 </div>
                             </article>
 
                             <article class="dados_triplo">
                                 <div>
                                     <label>Endereço</label> <br>
-                                    <input type="text" size="75%" name="address">
+                                    <input type="text" size="95%" name="address">
                                 </div>
                                 
                                 <div>
@@ -89,19 +90,19 @@
 
                                 <div>
                                     <label>Número</label> <br>
-                                    <input type="text" size="8%" name="house_number">
+                                    <input type="text" size="10%" name="house_number">
                                 </div>
                             </article>
 
                             <article class="dados_metade">
                                 <div>
                                     <label>Bairro</label> <br>
-                                    <input type="text" size="50%" name="bairro">
+                                    <input type="text" size="60%" name="bairro">
                                 </div>
                                 
                                 <div>
                                     <label>Cidade</label> <br>
-                                    <input type="text" size="50%" name="city">
+                                    <input type="text" size="60%" name="city">
                                 </div>
                             </article>
                             
@@ -123,7 +124,7 @@
                         
                             <div class="metadinha"><input type="radio" name="accordion_pagamento" id="cartao" class="accordion_input_pagamento">
                                 <article class="rosa">
-                                    <label for="cartao" class="accordion_label_pagamento"><div class="teste" style="padding-top: 5px;"><img src="imagens/cartao.png" style="height: 60px; width: 60px; padding: 0px 22px 0px 9px;">Cartão</div></label>
+                                    <label for="cartao" class="accordion_label_pagamento"><div class="tamanho" style="padding-top: 5px;"><img src="imagens/cartao.png" style="height: 60px; width: 60px; padding: 0px 22px 0px 9px;">Cartão</div></label>
                                     <div class="accordion_content_pagamento">
                                         <form name="pagamento" id="form_pagamento" action="#">
                                             <article class="pagamento_metade">
@@ -179,7 +180,7 @@
                             <div class="metadinha">
                                 <input type="radio" name="accordion_pagamento" id="boleto" class="accordion_input_pagamento">
                                 <article class="rosa">
-                                <label for="boleto" class="accordion_label_pagamento"><div class="teste"><img src="imagens/dinheiro.png" style="height: 70px; width: 80px; padding: 0px 10px 0px 0px;">Boleto</div></label>
+                                <label for="boleto" class="accordion_label_pagamento"><div class="tamanho"><img src="imagens/dinheiro.png" style="height: 70px; width: 80px; padding: 0px 10px 0px 0px;">Boleto</div></label>
                                 
                                 <div id="accordion_content_pagamento_boleto" class="accordion_content_pagamento">
                                 <button style="height: 40px; width: 350px; font-size: 20px; margin-top: 15px;">Clique aqui para gerar seu boleto</button>
@@ -230,7 +231,81 @@
             </div>
     
             <aside>
-
+                <div class="cart">
+                    <h1>Carrinho</h1>
+                    <div class="add">
+                        <ul type="none" id="selecionarFrutas">
+                                <li id="option1">
+                                    <label> Adicionar frutas</label>
+                                    <img id="openList" src="imagens/toggleButton.svg" onclick="controlarDropdown();" alt="">
+                                </li>
+                                <li id="option2">      
+                                    <div id="add-lista-item-0" class="dropdown">
+                                        <article id="itemAdd">
+                                            <img id="itemAddImage" alt=""/>
+                                            <div id="itemAddContent">
+                                                <p id="nameAdd"></p>
+                                                <div id="itemAddPrecoContainer">
+                                                    <p>R$</p><p id="precoAdd"></p>
+                                                </div>
+                                            </div>
+                                            <img id="0" class="itemAddButton" src="imagens/addButton.svg" onclick="adicionarItemAoCarrinho(this);" alt="">
+                                        </article>
+                                    </div>
+                                </li>
+                                    
+                         </ul>
+                        
+                    </div>
+            
+                    <div id = "itensContainer" class="itens">
+                        <div id="lista-item-0" class="item">
+                            <div id="info">
+                                <div id="imgContainer">
+                                    <img id="imagemItem"src=""/>
+                                </div>
+                                <div id="itensDado">
+                                    <p id="nome"></p>
+                                    <div id="precoContainer">
+                                        <p id="itensMoeda">R$</p> <p id="itensPreco"></p>
+                                    </div>
+                                </div>
+                                <div id="itensQuantidade">
+                                    <img id="close-0" class="closeButton" onclick="removerItem(this);" src="imagens/close.svg" alt="">
+                                        <p id="qtdText">Qntd</p>
+                                        <div id="qtdForm">
+                                            <input id="qtnd-0" class='quantidade' type="number"
+                                            value="1"
+                                            min="1"
+                                            onchange="calcularPreco(this);">
+                                        </div>
+                                </div>
+                            </div>
+                            <div id="preco">
+                                <p class="sub-design">Subtotal</p>
+                                <div id="precoContainer">
+                                    <p id="itensMoeda">R$</p> <p class="subprecos" id="Subpreco">450</p>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+            
+                    </div>   
+                    <div id="resultFinal">
+                        <div id="totalContainer">
+                            <h2>TOTAL</h2>
+                            <p id="precoTotal"></p>
+                        </div>
+                        <hr>
+                    </div> 
+                </div>
+            
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                <script type= "text/javascript"src="scripts/frutasClass.js"></script>
+                <script type= "text/javascript"src="scripts/frutasList.js"></script>
+                <script type= "text/javascript"src="scripts/cartSetData.js"></script>
+                <script type= "text/javascript"src="scripts/cartItems.js"></script>
+                
             </aside>
         </section>
 
