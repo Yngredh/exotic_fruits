@@ -23,7 +23,6 @@ html{
 
 /* >>> MENU <<< */
 nav.menu{
-    width: 99vw;
     height: 11vh;
     background-color:var(--roxo);
     display: flex;
@@ -72,14 +71,14 @@ div#botoes-menu{
 #conteudo {
     display: grid;
     text-align: center;
-    margin: 100px 0px 38px 0px;
+    margin: 20px 0px 35px 0px;
 }
 
 #titulo {
     font-family: "Corbel";
     font-weight: 800;
     font-size: 50px;
-    margin-bottom: 38px;
+    margin-bottom: 15px;
 
     color: #202040;
 
@@ -87,8 +86,8 @@ div#botoes-menu{
 }
 
 .bloco {
-    width: 85%;
-    height: 700px;
+    width: 75%;
+    padding: 5.2% 0 5.2% 0;
     justify-self: center;
 
     background: linear-gradient(252.13deg, rgba(192, 192, 96, 0.85) 21.41%, rgba(224, 64, 96, 0.8) 76.95%);
@@ -107,7 +106,6 @@ p{
 
 #data_info{
     text-align: right;
-    margin-top:100px;
     margin-right: 83px;
 }
 
