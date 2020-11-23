@@ -332,7 +332,6 @@ body .content{
 #texto-manchete2 #destaque{
     color: var(--rosa);
 }
-
 .manchete-1 #div-manchete-1,
 .manchete-2 #div-manchete-2{
     display: flex;

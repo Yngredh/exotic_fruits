@@ -121,9 +121,6 @@ body section.main-slide-button{
     align-items: flex-end;
 }
 
-
-
-
 /*Conteúdo da página Sobre nós*/
 img{
     display: block;
@@ -148,13 +145,11 @@ h2{
     color: #202040;
 }
 
-
 /*Sections -> bloco*/
-
 .Bloco1{
     position: relative;
     bottom: -16vw;
-    background-color: var(--rosa);
+    background-color: rgba(224, 64, 96, 0.80);
     border-radius: 20px;
     max-width: 92.5%;
     margin: 0 auto;
@@ -181,7 +176,6 @@ h2{
     margin: 5% auto;
     padding: 15px;
 }
-
 
 /*                                          BLOCO 1                                             */
 /*texto com logo*/
@@ -225,8 +219,8 @@ h2{
 .articlebox1{
     background-color: var(--verde);
     border-radius: 20px;
-    max-width: 92.5%;
-    margin: 0 auto;
+    /* max-width: 92.5%;
+    margin: 0 auto; */
 
     align-items: center;
 }
@@ -234,10 +228,10 @@ h2{
 .info{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 3%
+    grid-gap: 5%
 }
 .info #text1{
-    width: 80%;
+    width: 90%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -249,6 +243,7 @@ h2{
     width: 100%;
     height: 92%;
     border-radius: 10px;
+    padding: 24px;
 }
 
 .info img{
@@ -262,7 +257,7 @@ h2{
     margin: 0 auto;
     max-width: 70%; 
     text-align: right;
-    padding-bottom: 25vh;
+    padding-bottom: 5vh;
     margin-bottom: 5%;
     margin-top: 5%;
 
@@ -275,15 +270,15 @@ h2{
     background-image: url("../imagens/Valores.png");
     background-size: cover;
     background-color:white;
-    width: 440px;
-    height: 440px;
+    width: 250px;
+    height: 250px;
     float: right;
-   shape-outside: circle() margin-box; 
-   margin: 5%;
+    shape-outside: circle() margin-box; 
+    margin: 5%;
  
-   border: 10px solid rgba(0, 0, 0, .1);
-   border-left-color: #f38db4;
-   border-radius: 50%;
+    border: 10px solid rgba(0, 0, 0, .1);
+    border-left-color: #f38db4;
+    border-radius: 50%;
 }
 
 /*Nosso diferencial*/
