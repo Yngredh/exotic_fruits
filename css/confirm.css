@@ -4,19 +4,16 @@
     --verde: #c0c060;
     --roxo: #202040 
 }
-
 body{
     background-color: #CFCFE7;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
 }
-
 *{
     margin: 0;
     padding: 0;
 }
-
 html{
     scroll-behavior: smooth;
 }
@@ -27,7 +24,6 @@ nav.menu{
     background-color:var(--roxo);
     display: flex;
 }
-
 nav.menu ul{
     list-style: none;
     width: 99vw;
@@ -36,18 +32,15 @@ nav.menu ul{
     justify-content: center;
     align-items: center;
 }
-
 li#logo-box{
     margin-top: 5px;
     width: 50%;
     height: 100%;
 }
-
 #logo{
     width: 100%;
     padding-left: 8px;
 }
-
 div#botoes-menu{
     width: 50%;
     height: 100%;
@@ -56,7 +49,6 @@ div#botoes-menu{
     align-items: center;
     padding-right: 45px;
 }
-
 #link-menu-logo{
     display: flex;
     width: 8.5%;
@@ -67,13 +59,11 @@ div#botoes-menu{
 }
 
 /* >> CONTEUDO << */
-
 #conteudo {
     display: grid;
     text-align: center;
     margin: 20px 0px 35px 0px;
 }
-
 #titulo {
     font-family: "Corbel";
     font-weight: 800;
@@ -84,7 +74,6 @@ div#botoes-menu{
 
     text-shadow: -3px 3px 5px rgba(0, 0, 0, 0.4);
 }
-
 .bloco {
     width: 75%;
     padding: 5.2% 0 5.2% 0;
@@ -95,7 +84,6 @@ div#botoes-menu{
     border-radius: 20px;
 
 }
-
 p{
     font-family: "Corbel";
     color: #202040;
@@ -103,12 +91,10 @@ p{
     font-size: 20px;
     font-weight: 800;
 }
-
 #data_info{
     text-align: right;
     margin-right: 83px;
 }
-
 .b1, .b2{
     display: grid;
     grid-template-columns: 1fr 40%;
@@ -120,26 +106,20 @@ p{
     text-align: left;
     margin-left: 83px;
 }
-
 .pagamento, .val_pag{
     text-align: right;
     margin-right: 83px;
 }
-
 .end_org{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-
-
 /* >> FINALIZAR << */
-
 #finalizar {
     display: flex;
     justify-content: center;
 }
-
 #botao_finalizar {
     width: 817px;
     height: 47.19px;

@@ -4,23 +4,19 @@
     --verde: #c0c060;
     --roxo: #202040 
 }
-
 body{
     background-color: #CFCFE7;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
 }
-
 *{
     margin: 0;
     padding: 0;
 }
-
 html{
     scroll-behavior: smooth;
 }
-
 /* >>> MENU <<< */
 nav.menu{
     width: 100vw;
@@ -28,7 +24,6 @@ nav.menu{
     background-color:var(--roxo);
     display: flex;
 }
-
 nav.menu ul{
     list-style: none;
     width: 100vw;
@@ -37,18 +32,15 @@ nav.menu ul{
     justify-content: center;
     align-items: center;
 }
-
 li#logo-box{
     margin-top: 5px;
     width: 50%;
     height: 100%;
 }
-
 #logo{
     width: 100%;
     padding-left: 8px;
 }
-
 div#botoes-menu{
     width: 50%;
     height: 100%;
@@ -57,7 +49,6 @@ div#botoes-menu{
     align-items: center;
     padding-right: 45px;
 }
-
 div#botoes-menu li{
     height: 100%;
     display: flex;
@@ -66,7 +57,6 @@ div#botoes-menu li{
     padding-left: 10px;
 
 }
-
 #link-menu2{
     display: flex;
     width: 3vw;
@@ -76,7 +66,6 @@ div#botoes-menu li{
     justify-content: center;
     align-items: center;
 }
-
 #link-menu1{
     display: flex;
     width: 100%;
@@ -91,7 +80,6 @@ div#botoes-menu li{
     font-size: 25px;
     padding: 0 25px;
 }
-
 #link-menu-logo{
     display: flex;
     width: 8.5%;
@@ -100,19 +88,16 @@ div#botoes-menu li{
     text-decoration: none;
     color: white;
 }
-
 #img-carrinho{
     width: 50px;
     height: 60px;
 
 }
-
 div#botoes-menu #link-menu1:hover{
     background-color: var(--verde);
 }
 
 /* >>> HEADER <<< */
-
 .banner{
     display: grid;
     justify-content: center;
@@ -120,14 +105,12 @@ div#botoes-menu #link-menu1:hover{
     height: 100%;
     padding-top: 20px;
 }
-
 .div-exotic{
     display: grid;
     justify-content: center;
 }
 
 /* >>> BLOCOS <<< */
-
 section {
     position: relative;
     width: 90vw;
@@ -137,7 +120,6 @@ section {
     flex-wrap: wrap;
     padding: 30px;
 }
-
 section .box {
     position: relative;
     max-width: 300px;
@@ -150,11 +132,9 @@ section .box {
     flex-direction: column;
     transition: 0.3s ease-in-out;
 }
-
 section .box:hover {
     height: 390px;
 }
-
 section .box .img {
     position: relative;
     width: 260px;
@@ -162,12 +142,10 @@ section .box .img {
     left: 5px;
     z-index: 1;
 }
-
 section .box .img img {
     max-width: 100%;
     border-radius: 5px;
 }
-
 section .box .content {
     position: relative;
     margin-top: -140px;
@@ -178,14 +156,12 @@ section .box .content {
     opacity: 0;
     transition: 0.1s step-end;
 }
-
 section .box:hover .content {
     visibility: visible;
     opacity: 1;
     margin-top: 10px;
     transition-delay: 0.1s;
 }
-
 .botao{
     padding: 12px;
     margin: 10px;
@@ -197,7 +173,6 @@ section .box:hover .content {
     background: #E04060;
     color: #FFF;
 }
-
 .fruit-name {
     width: 240px;
     margin-left: 20px;
@@ -207,14 +182,12 @@ section .box:hover .content {
     font-weight: bolder;
     color: var(--rosa)
 }
-
 #selo{
     width: 9%;
     height: 9%;
     padding-left: 10px;
     padding-top: -10px;
 }
-
 .fruit-price {
     display: flex;
     margin-right: 30px;
@@ -222,14 +195,13 @@ section .box:hover .content {
     font-family: "Tahoma";
     justify-content: flex-end;
 }
-
 .about{
     font-family: Tahoma;
     font-size: 15px;
     color: #202040;
 }
-/* >>> MENU END <<< */
 
+/* >>> MENU END <<< */
 footer{
     background-color: #202040;
     width: 100vw;
@@ -237,7 +209,6 @@ footer{
     display: flex;
     align-items: flex-end;
 }
-
 div.botao-top{
     width: 50%;
     height: 100%;
@@ -246,7 +217,6 @@ div.botao-top{
     align-items: center;
     margin-right: 60px;
 }
-
 #botao{
     background-color: #E04060;
     border-radius: 0.25rem;
@@ -261,7 +231,6 @@ div.botao-top{
     justify-content: center;
     text-decoration: none;
 }
-
 .imglogo{
     display: flex;
     align-self: flex-start;
@@ -269,7 +238,6 @@ div.botao-top{
     height: 100%;
     margin-left: 12px;
 }
-
 #logo2{
     width: 30%;
     height: 100%;
