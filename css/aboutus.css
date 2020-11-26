@@ -117,11 +117,10 @@ img{
     display: block;
 }
 p{
-    width: 100%;
-    height: 100%;
+    /* width: 100%;
+    height: 100%; */
     font-family:"Corbel";
     font-size: 24px;
-    line-height: 100%;
     text-decoration: none;
 
     color: #202040;
@@ -129,7 +128,7 @@ p{
 h2{
     font-family:"Corbel";
     font-size: 38px;
-    line-height: 100%;
+    padding-top: 20px;
 
     color: #202040;
 }
@@ -138,16 +137,16 @@ h2{
 .Bloco1{
     position: relative;
     bottom: -16vw;
-    background-color: rgba(224, 64, 96, 0.80);
+    /* background-color: rgba(224, 64, 96, 0.80); */
+    background-color: rgba(0, 0, 0, 0.10);
     border-radius: 20px;
     max-width: 92.5%;
     margin: 0 auto;
-    padding: 30px;
+    padding: 30px 30px 1px 30px;
 }
 .Bloco2{
     position: relative;
-    bottom: -12vw;
-    background-color: var(--verde);
+    background-color: #44a360;
     border-radius: 20px;
     max-width: 92.5%;
     margin: 5% auto;
@@ -155,11 +154,10 @@ h2{
 }
 .Bloco3{
     position: relative;
-    bottom: -9vw;
     background-color: var(--roxo);
     border-radius: 20px;
     max-width: 92.5%;
-    height: 59vh;
+    height: 44vh;
     margin: 5% auto;
     padding: 15px;
 }
@@ -203,8 +201,12 @@ h2{
 .articlebox1{
     background-color: var(--verde);
     border-radius: 20px;
-    /* max-width: 92.5%;
-    margin: 0 auto; */
+
+    align-items: center;
+}
+.articlebox2{
+    background-color: var(--rosa);
+    border-radius: 20px;
 
     align-items: center;
 }
@@ -241,6 +243,7 @@ h2{
     padding-bottom: 5vh;
     margin-bottom: 5%;
     margin-top: 5%;
+    text-shadow: 1px 1px 2px #ffffff, 0 0 2px #000000, 0 0 1px #c0c060;
 
     align-items: center;
 }
@@ -255,6 +258,7 @@ h2{
     float: right;
     shape-outside: circle() margin-box; 
     margin: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.30);
  
     border: 10px solid rgba(0, 0, 0, .1);
     border-left-color: #f38db4;
@@ -262,22 +266,25 @@ h2{
 }
 
 /*Nosso diferencial*/
-.articlebox1{
-    background-color: var(--verde);
-    border-radius: 20px;
+.articlebox3{
+    /* border-radius: 20px;
     max-width: 92.5%;
     margin: 0 auto;
     padding: 30px;
+
+    align-items: center; */
+
+    border-radius: 20px;
 
     align-items: center;
 }
 .diferencial{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 2%
+    grid-gap: 5%;
+    justify-items: center;
 }
 .diferencial #img2{
-    width: 90%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -289,10 +296,9 @@ h2{
     border-radius: 10px;
 }
 .diferencial #text2{
-    width: 90%;
-    height: 100%;
     text-align: center;
-    padding-left: 15px;
+    padding-left: 30px;
+    padding-top: 80px;
 }
 
 /*  BLOCO 2  */
@@ -338,8 +344,8 @@ h2{
     background-position: center;
     background-image: url("../imagens/Selo.png");
     background-color: #FFF;
-    width: 30vw;
-    height: 60vh;
+    width: 15vw;
+    height: 30vh;
     border-radius: 50%;
     float: left;
     shape-outside: circle() margin-box; 
@@ -349,6 +355,10 @@ h2{
     border: 10px solid rgba(0, 0, 0, .1);
     border-right-color: var(--verde);
     border-radius: 50%;
+}
+#compre-conosco{
+    text-decoration: wavy;
+    color: var(--verde);
 }
 .cont h2{
     color: #FFF;
